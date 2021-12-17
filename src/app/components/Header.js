@@ -13,11 +13,8 @@ function Header() {
   return (
     <HeaderContainer>
       <HeaderLeft>
-        <HeaderAvatar
-          onClick={() => auth.signOut()}
-          alt={user?.displayName}
-          src={user?.photoURL}
-        />
+        <HeaderAvatar alt={user?.displayName} src={user?.photoURL} />
+        <p onClick={() => auth.signOut()}>Sign out</p>
         <AccessTimeIcon />
       </HeaderLeft>
       {/**Header middle */}
@@ -43,7 +40,8 @@ const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  background-color: var(--slack-color);
+  background-color: #340c35;
+  /* var(--slack-color); */
   color: white;
 `;
 
@@ -55,6 +53,13 @@ const HeaderLeft = styled.div`
   > .MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 30px;
+  }
+
+  > p {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
   }
 `;
 

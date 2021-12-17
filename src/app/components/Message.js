@@ -19,15 +19,13 @@ function Message({ message, timestamp, user, userImage }) {
 export default Message;
 
 const MessageContainer = styled.div`
-display: flex
-align-items: center
-padding: 20px
-
-> img {
-    height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  > img {
+    height: 40px;
     border-radius: 8px;
-}
-
+  }
 `;
 const MessageInfo = styled.div`
   padding-left: 10px;

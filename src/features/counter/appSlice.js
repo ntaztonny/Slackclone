@@ -7,7 +7,7 @@ const initialState = {
 
 export const appSlice = createSlice({
   name: "app",
-  initialState: { roomId: null },
+  initialState: { roomId: "6S4UyJbyY4oL6j8Nwkkd" },
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     enterRoom: (state, action) => {
