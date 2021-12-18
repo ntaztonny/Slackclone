@@ -1,4 +1,4 @@
-This is a Slack clone built with React, Redux, Firebase styled components and firebase hooks.
+This is a Slack clone built with React, Redux, Firebase & firebase hooks, and styled components
 
 ### About the app:
 
