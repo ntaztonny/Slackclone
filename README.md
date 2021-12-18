@@ -2,7 +2,7 @@ This is a Slack clone built with React, Redux, Firebase & firebase hooks, and st
 
 ### About the app:
 
-The application is a clone for spotify's messaging functionality. You can find the deployed app on: https://slackclone-e4844.web.app/
+The application is a clone for Slack's messaging functionality. You can find the deployed app on: https://slackclone-e4844.web.app/
 
 ### Functionality
 
