@@ -19,9 +19,13 @@ function Login() {
         <h1>Sign into Tonny's Slack-clone</h1>
         <p>You can use your gmail account</p>
 
-        <Button type="submit" onClick={signIn}>
+        <Buttoned type="submit" onClick={signIn}>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzC2JyZDZ_RaWf0qp11K0lcvB6b6kYNMoqtZAQ9hiPZ4cTIOB"
+            alt=""
+          />
           <h2>Sign in with Google</h2>
-        </Button>
+        </Buttoned>
       </LoginInnerContainer>
     </LoginContainer>
   );
@@ -36,7 +40,7 @@ const LoginContainer = styled.div`
   place-items: center;
 `;
 const LoginInnerContainer = styled.div`
-  padding: 100px;
+  padding: 150px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
@@ -46,6 +50,10 @@ const LoginInnerContainer = styled.div`
     height: 30px;
     margin-bottom: 40px;
   }
+
+  > p {
+    font-weight: 450;
+  }
   > button {
     margin-top: 50px;
     padding: 10px 100px;
@@ -53,5 +61,26 @@ const LoginInnerContainer = styled.div`
     color: #0000f5;
     border: 1px solid;
     font-weight: 300;
+  }
+`;
+
+const Buttoned = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px 100px;
+  text-transform: inherit !important;
+  color: #4285f4;
+  border: 2px solid #4285f4;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 13px;
+  cursor: pointer;
+  :hover {
+    opacity: 0.7;
+  }
+  > img {
+    height: 25px;
+    margin-right: 10px;
   }
 `;

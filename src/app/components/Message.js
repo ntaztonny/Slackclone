@@ -22,6 +22,7 @@ const MessageContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 20px;
+  padding-top: 1px;
   > img {
     height: 40px;
     border-radius: 8px;
